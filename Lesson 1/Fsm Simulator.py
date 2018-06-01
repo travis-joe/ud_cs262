@@ -13,11 +13,16 @@ def fsmsim(string, current, edges, accepting):
         return current in accepting
     else:
         letter = string[0]
+        if (current, letter) in edges:
+            stage = edges[(current, letter)]
+            return fsmsim(string[1:], stage, edges, accepting)
+        else:
+            return False
         # QUIZ: You fill this out!
         # Is there a valid edge?
         # If so, take it.
         # If not, return False.
         # Hint: recursion.
 
-# print(fsmsim("aaa111",1,edges,accepting))
+print(fsmsim("aaa111",1,edges,accepting))
 # >>> True
