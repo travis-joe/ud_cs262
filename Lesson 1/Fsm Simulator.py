@@ -24,5 +24,23 @@ def fsmsim(string, current, edges, accepting):
         # If not, return False.
         # Hint: recursion.
 
-print(fsmsim("aaa111",1,edges,accepting))
+
+print(fsmsim("aaa111", 1, edges, accepting))
 # >>> True
+
+#  r"q*"
+# edges = {
+#     (1, "q"):1,
+# }
+#
+# accepting = [1]
+
+
+# r"[a-b][c-d]?"
+# edges = {
+#     (1,'a'):2,
+#     (1,'b'):2,
+#     (2,'c'):3,
+#     (2,'d'):3
+# }
+# accepting = [2, 3]

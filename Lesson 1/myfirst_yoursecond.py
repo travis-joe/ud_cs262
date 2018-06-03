@@ -32,3 +32,5 @@ def find_space(w):
 
 print(myfirst_yoursecond("bell hooks", "curer bell"))
 # >>> True
+
+# re=r"[0-9]+(?:-[0-9]+)*"
